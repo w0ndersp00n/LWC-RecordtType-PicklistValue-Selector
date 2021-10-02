@@ -1,5 +1,6 @@
 <template>
     <lightning-record-edit-form object-api-name={objectName} record-type-id={recordTypeId} >
-        <lightning-input-field field-name={fieldName} value={fieldValue} required={isRequired} onchange={handleFieldChange} ></lightning-input-field>
+        <lightning-input-field field-name={controllingFieldName} value={controllingFieldValue} required={isRequired} onchange={handleControllingFieldChange}></lightning-input-field>
+        <lightning-input-field field-name={dependentFieldName} value={dependentFieldValue} required={isRequired} onchange={handleDependentFieldChange}></lightning-input-field>
     </lightning-record-edit-form>
 </template>
